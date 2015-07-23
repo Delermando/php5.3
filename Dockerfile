@@ -5,5 +5,3 @@ RUN aptitude install -y -f phpunit
 
 RUN curl -s https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
-
-RUN docker-php-ext-install mbstring
