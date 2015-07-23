@@ -1,1 +1,2 @@
-# php5.3-mysql5.5
+    Nesta imagem vem instalada o PHP 5.3 com as extensões de PDO, Mbstring e Mcrypt além do Apache 2.2, Composer e PHPUnit. 
+    O makefile levanta esta imagem e uma outra do mysql 5.5. Neste repositorio tambem tem um arquivo "mysql-data.tar.gz", que contém os arquivos basicos de um banco mysql, que precisa ser descompactada. Ao levantar o container do mysql o makefile espelha esta pasta para dentro do container, assim seus dados do mysql nao ficaram salvos dentro do container e sim nesta pasta. Entao ao rodar "make up"é levantando na pasta corrente, ambiente simples para rodar uma aplicação como o wordpress ou algum framework por exemplo.
